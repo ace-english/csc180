@@ -1,1 +1,14 @@
 https://www.kdnuggets.com/2019/11/machine-learning-what-why-how-weighting.html
+
+use test data instead
+clean up notebook
+test variables
+cnn? fully connected nn? wtf are those?
+	Compare the accuracy, recall, precision and F1-score of the following models. PLOT the confusion matrix for each model
+show most important variables
+tweak:
+	• Activation: relu, sigmoid, tanh
+	• Layers and neuron counts
+	• Optimizer: adam and sgd
+	• Kernel number and kernel size (for CNN only)
+report
