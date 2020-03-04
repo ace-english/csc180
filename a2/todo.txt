@@ -1,14 +1,58 @@
 https://www.kdnuggets.com/2019/11/machine-learning-what-why-how-weighting.html
 
-use test data instead
-clean up notebook
+[x] clean up notebook
 test variables
-cnn? fully connected nn? wtf are those?
-	Compare the accuracy, recall, precision and F1-score of the following models. PLOT the confusion matrix for each model
-show most important variables
+[x] cnn? fully connected nn? wtf are those?
+	[x] Compare the accuracy, recall, precision and F1-score of the following models. PLOT the confusion matrix for each model
 tweak:
 	• Activation: relu, sigmoid, tanh
 	• Layers and neuron counts
 	• Optimizer: adam and sgd
 	• Kernel number and kernel size (for CNN only)
 report
+
+test_nn('relu',1,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',1,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',1,100,'adam',x_train,y_train,x_test,y_test)
+#sdg
+test_nn('relu',1,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',1,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',1,100,'sdg',x_train,y_train,x_test,y_test)
+#layer count
+test_nn('relu',2,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',2,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('relu',3,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,100,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',3,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,100,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,100,'sdg',x_train,y_train,x_test,y_test)
+#neron count
+test_nn('relu',2,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',2,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('relu',3,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,50,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',3,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,50,'sdg',x_train,y_train,x_test,y_test)
+test_nn('relu',2,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',2,250,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',2,250,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',2,250,'sdg',x_train,y_train,x_test,y_test)
+test_nn('relu',3,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,250,'adam',x_train,y_train,x_test,y_test)
+test_nn('relu',3,250,'sdg',x_train,y_train,x_test,y_test)
+test_nn('sigmoid',3,250,'sdg',x_train,y_train,x_test,y_test)
+test_nn('tanh',3,250,'sdg',x_train,y_train,x_test,y_test)
